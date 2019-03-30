@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                tools:context=".MainActivity">
+
+
+    <ImageView
+            android:id="@+id/image1"
+            android:layout_width="92dp"
+            android:layout_height="97dp"
+            android:layout_above="@id/Welcome"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/c3" />
+
+    <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Welcome to Android"
+            android:textColor="#7cb342"
+
+            android:textSize="22dp" />
+
+    <TextView
+            android:id="@+id/SignIn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Welcome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Sign in to continue "
+            android:textColor="#263238"
+            android:textSize="15dp" />
+
+    <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SignIn1"
+            android:layout_alignLeft="@id/Edit1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="sans-serif"
+            android:text="  USERNAME"
+            android:textColor="#263238"
+            android:textSize="10dp" />
+
+    <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Edit1"
+            android:layout_alignLeft="@id/Edit2"
+
+            android:layout_marginBottom="4dp"
+            android:fontFamily="sans-serif"
+            android:text="  PASSWORD"
+            android:textColor="#263238"
+            android:textSize="10dp" />
+
+    <EditText
+            android:id="@+id/Edit1"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginBottom="8dp"
+            android:hint="Enter your Username"
+            android:maxLines="3"
+
+            android:textColorHighlight="#7cff88"
+            android:textSize="12dp" />
+
+    <EditText
+            android:id="@+id/Edit2"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginBottom="20dp"
+
+            android:hint="Enter your Passsword"
+            android:maxLines="3"
+            android:textSize="12dp" />
+
+    <Button
+            android:id="@+id/Signin"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/Edit2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:text="SIGN IN"
+            android:textColor="#F5F5F5"
+            android:textSize="20dp" />
+
+    <TextView
+            android:id="@+id/last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Signin"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            android:text="SIGN UP AN ACCOUNT? "
+            android:textColor="#263238"
+            android:textSize="10dp" />
+
+</RelativeLayout>
